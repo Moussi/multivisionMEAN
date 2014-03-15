@@ -1,0 +1,21 @@
+{
+  "name": "MultiVisionCustom",
+  "version": "0.0.0",
+  "description": "EndToEnd MEAN App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "author": "MOUSSI Aymen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~3.4.8",
+    "mongoose": "~3.8.8",
+    "ejs": "~0.8.5",
+    "stylus": "~0.40.2"
+  }
+}
