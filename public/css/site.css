@@ -1,17 +1,25 @@
 body {
-  padding-top: 61px;
+    padding-top: 61px;
 }
 .navbar-header a.navbar-brand {
-  margin-top: -15px;
-  margin-bottom: -20px;
+    margin-top: -15px;
+    margin-bottom: -20px;
 }
 .navbar-header a.navbar-brand h6 {
-  color: #ccc;
+    color: #ccc;
 }
 footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 footer p {
-  border-top: 1px solid #d7e0e2;
+    border-top: 1px solid #d7e0e2;
+}
+.navbar-form 
+    .form-group {
+        margin-left: 10px;
+   }
+   button {
+       margin-left: 10px;
+  } 
 }

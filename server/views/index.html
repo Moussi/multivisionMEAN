@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MultiVision</title>
+        <title>MultiVision Custom</title>
         <link rel="shortcut icon" type="imagex-icon" href="vendor/favicon.ico">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/site.css">
@@ -11,17 +11,20 @@
         <script type="text/javascript" src="vendor/angular-resource/angular-resource.js"></script>
         <script type="text/javascript" src="vendor/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="app/app.js"></script>
+ <script type="text/javascript" src="app/main/mvMainCtrl.js"></script>
+  <script type="text/javascript" src="app/account/mvNavBarLoginCtrl.js"></script>
     </head>
     <body ng-app="app">
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header"><a href="/" class="navbar-brand">MultiVision</a>
-      <h6>-Extreme Tech Training</h6>
+      <h6>Extreme Tech Training</h6>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li> <a href="/">Home</a></li>
       </ul>
+      <div ng-include="'/partials/account/navbar-login'"></div>
     </div>
   </div>
 </div>
