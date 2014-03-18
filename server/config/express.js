@@ -1,4 +1,6 @@
- var express = require('express'),stylus=require('stylus');
+ var express = require('express'),
+ stylus=require('stylus'),
+ passport = require('passport');
 
 
  module.exports = function(app,config) {
@@ -12,6 +14,10 @@
          app.engine('.html', require('ejs').__express);
          app.set('view engine', 'html');
          app.use(express.logger('dev'));
+         app.use(express.cookieParser());
+         app.use(express.session({secret:'multivision'}));
+         app.use(passport.initialize());
+         app.use(passport.session());
          app.use(express.bodyParser());
          app.use(express.static(config.rootPath + '/public'));
          app.use(stylus.middleware({
