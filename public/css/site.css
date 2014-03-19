@@ -1,6 +1,14 @@
 body {
   padding-top: 61px;
+  margin: 0;
+     background: url('http://localhost/AngularJsTraining/MultiVisionCustom/public/app/images/test2.jpg');
+     background-size: 1440px 800px;
+     background-repeat:no-repeat;
+    display: compact;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+
 .navbar-header a.navbar-brand {
   margin-top: -15px;
   margin-bottom: -20px;
@@ -21,9 +29,16 @@ footer p {
 .navbar-form button {
   margin-left: 10px;
 }
-.toast-top-right {
-  top: 250px;
+
+
+
+.avatar {
+    width: 24px;
+    height: 24px;
 }
-.toast-success {
-  background-color: #13987e;
+
+/* resize images */
+.avatar img {
+    width: 100%;
+    height: auto;
 }
